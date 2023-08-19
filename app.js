@@ -4,7 +4,6 @@ const mongoose = require("mongoose");
 const date = require(__dirname + "/date.js");
 
 const app = express();
-const port = 3000;
 
 app.set('view engine', 'ejs');
 
@@ -132,6 +131,6 @@ app.get("/about", function(req, res){
   res.render("about");
 });
 
-app.listen(process.env.PORT || port, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log(`Your server started on port ${port}`);
 })
