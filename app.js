@@ -10,7 +10,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://aravind94977034:itsmedevil008@todoapplication.un8qzmr.mongodb.net/todolistDB", { useNewUrlParser:true });
+mongoose.connect("mongodb+srv://aravind94977034:*****@todoapplication.un8qzmr.mongodb.net/todolistDB", { useNewUrlParser:true });
 
 const todoSchema = {
   todoName : {
